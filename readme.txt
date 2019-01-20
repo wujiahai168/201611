@@ -8,19 +8,22 @@ Git is a distributed version control system.
 Git is free software distributed under the GPL.
 Git has a mutable index called stage.
 
-ÕıÈ·²½Öè£º
-1. git init //³õÊ¼»¯²Ö¿â
-2. git add .(ÎÄ¼şname) //Ìí¼ÓÎÄ¼şµ½±¾µØ²Ö¿â
-3. git commit -m "first commit" //Ìí¼ÓÎÄ¼şÃèÊöĞÅÏ¢
-4. git remote add origin + Ô¶³Ì²Ö¿âµØÖ· //Á´½ÓÔ¶³Ì²Ö¿â£¬´´½¨Ö÷·ÖÖ§
+æ­£ç¡®æ­¥éª¤ï¼š
+1. git init //åˆå§‹åŒ–ä»“åº“
+2. git add .(æ–‡ä»¶name) //æ·»åŠ æ–‡ä»¶åˆ°æœ¬åœ°ä»“åº“
+3. git commit -m "first commit" //æ·»åŠ æ–‡ä»¶æè¿°ä¿¡æ¯
+4. git remote add origin + è¿œç¨‹ä»“åº“åœ°å€ //é“¾æ¥è¿œç¨‹ä»“åº“ï¼Œåˆ›å»ºä¸»åˆ†æ”¯
    git remote add origin git@server-name:path/repo-name.git
    git remote add origin git@github.com:wujiahai168/learngit.git
-5. git pull origin master // °Ñ±¾µØ²Ö¿âµÄ±ä»¯Á¬½Óµ½Ô¶³Ì²Ö¿âÖ÷·ÖÖ§
-6. git push -u origin master //°Ñ±¾µØ²Ö¿âµÄÎÄ¼şÍÆËÍµ½Ô¶³Ì²Ö¿â
+5. git pull origin master // æŠŠæœ¬åœ°ä»“åº“çš„å˜åŒ–è¿æ¥åˆ°è¿œç¨‹ä»“åº“ä¸»åˆ†æ”¯
+6. git push -u origin master //æŠŠæœ¬åœ°ä»“åº“çš„æ–‡ä»¶æ¨é€åˆ°è¿œç¨‹ä»“åº“
 
 
-Ô­Òò£º
-GitHubÔ¶³Ì²Ö¿âÖĞµÄREADME.mdÎÄ¼ş²»ÔÚ±¾µØ²Ö¿âÖĞ¡£
-½â¾ö·½°¸£º
+åŸå› ï¼š
+GitHubè¿œç¨‹ä»“åº“ä¸­çš„README.mdæ–‡ä»¶ä¸åœ¨æœ¬åœ°ä»“åº“ä¸­ã€‚
+è§£å†³æ–¹æ¡ˆï¼š
 git pull --rebase origin master
 git push -u origin master
+
+distributed-even-if-your-workflow-isnt
+https://git-scm.com/book/zh/v2
