@@ -33,3 +33,5 @@ Creating a new branch is quick and simple.
 fffffffffffffffffff
 
 修改readme.txt文件，并提交一个新的commit：
+
+工作区是干净的，刚才的工作现场存到哪去了？用git stash list命令看看：
