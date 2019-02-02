@@ -26,3 +26,5 @@ git pull --rebase origin master
 git push -u origin master
 
 Creating a new branch is quick.
+
+Creating a new branch is quick AND simple.
