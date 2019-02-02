@@ -24,3 +24,5 @@ GitHub远程仓库中的README.md文件不在本地仓库中。
 解决方案：
 git pull --rebase origin master
 git push -u origin master
+
+Creating a new branch is quick.
