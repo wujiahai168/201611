@@ -1,9 +1,0 @@
-{
-  "__type__": "cc.ParticleAsset",
-  "_name": "smoke",
-  "_objFlags": 0,
-  "_native": ".plist",
-  "texture": {
-    "__uuid__": "6f932e68-4c0f-4291-9759-852e509d2e83"
-  }
-}
