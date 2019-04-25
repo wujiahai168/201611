@@ -1,0 +1,102 @@
+2019-04-25T08:37:22.298Z - normal: Load ~/.CocosCreator/settings.json
+2019-04-25T08:37:22.301Z - normal: checking language setting...
+2019-04-25T08:37:22.302Z - normal: Language: zh
+2019-04-25T08:37:23.973Z - success: protocol editor-framework registered
+2019-04-25T08:37:23.973Z - success: protocol app registered
+2019-04-25T08:37:23.973Z - success: protocol theme registered
+2019-04-25T08:37:23.973Z - success: protocol packages registered
+2019-04-25T08:37:23.973Z - success: protocol unpack registerred
+2019-04-25T08:37:23.973Z - success: protocol disable-commonjs registerred
+2019-04-25T08:37:24.147Z - normal: connected!
+2019-04-25T08:37:24.149Z - normal: Check project G:\Game\learn\cocos collect
+2019-04-25T08:37:24.154Z - normal: Initializing project G:\Game\learn\cocos collect
+2019-04-25T08:37:24.159Z - normal: Initializing Cocos2d
+2019-04-25T08:37:24.914Z - normal: Initializing Asset Database
+2019-04-25T08:37:24.963Z - success: protocol uuid registerred
+2019-04-25T08:37:24.963Z - success: protocol db registerred
+2019-04-25T08:37:24.963Z - success: protocol thumbnail registerred
+2019-04-25T08:37:24.963Z - normal: Loading editor/builtin packages
+2019-04-25T08:37:25.124Z - success: assets loaded
+2019-04-25T08:37:25.126Z - success: builder loaded
+2019-04-25T08:37:25.129Z - success: cocos-analytics loaded
+2019-04-25T08:37:25.132Z - success: console loaded
+2019-04-25T08:37:25.164Z - success: fb-instant-games loaded
+2019-04-25T08:37:25.170Z - success: hierarchy loaded
+2019-04-25T08:37:25.172Z - success: inspector loaded
+2019-04-25T08:37:25.174Z - success: keystore loaded
+2019-04-25T08:37:25.178Z - success: node-library loaded
+2019-04-25T08:37:25.179Z - success: package-asset loaded
+2019-04-25T08:37:25.180Z - success: preferences loaded
+2019-04-25T08:37:25.182Z - success: project-exporter loaded
+2019-04-25T08:37:25.198Z - success: project-importer loaded
+2019-04-25T08:37:25.200Z - success: project-settings loaded
+2019-04-25T08:37:25.203Z - success: ui-kit loaded
+2019-04-25T08:37:25.206Z - success: scene loaded
+2019-04-25T08:37:25.208Z - success: sprite-editor loaded
+2019-04-25T08:37:25.211Z - success: store loaded
+2019-04-25T08:37:25.214Z - success: timeline loaded
+2019-04-25T08:37:25.214Z - normal: Loading builtin packages
+2019-04-25T08:37:25.224Z - success: asset-db-debugger loaded
+2019-04-25T08:37:25.227Z - success: code-editor loaded
+2019-04-25T08:37:25.228Z - success: color-picker loaded
+2019-04-25T08:37:25.229Z - success: jsb-adapter loaded
+2019-04-25T08:37:25.233Z - success: package-manager loaded
+2019-04-25T08:37:25.344Z - success: qqplay-adapter loaded
+2019-04-25T08:37:25.349Z - success: sdkbox loaded
+2019-04-25T08:37:25.354Z - success: tester loaded
+2019-04-25T08:37:25.357Z - success: ui-grid loaded
+2019-04-25T08:37:25.360Z - success: ui-kit-preview-extra loaded
+2019-04-25T08:37:25.362Z - success: ui-kit-preview loaded
+2019-04-25T08:37:25.364Z - success: ui-tree loaded
+2019-04-25T08:37:25.365Z - success: weapp-adapter loaded
+2019-04-25T08:37:26.518Z - normal: Loading packages
+2019-04-25T08:37:26.525Z - normal: Watching packages
+2019-04-25T08:37:27.299Z - normal: Run Application
+2019-04-25T08:37:29.096Z - failed: [db-task][init] Failed to import asset G:\Game\learn\cocos collect\assets\0424\global.js, message: Compile error: SyntaxError: G:/Game/learn/cocos collect/assets/0424/global.js: Unexpected token (7:14)
+   5 | 
+   6 | module.exports = {
+>  7 |     enmey_int = 0,      //敌人数目
+     |               ^
+   8 |     score_int = 0,      //得分
+   9 | };
+  10 | 
+    at Parser.pp$5.raise (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp$3.parseMaybeAssign (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3370:10)
+    at Parser.pp$3.parseMaybeAssign (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3367:23)
+    at Parser.pp$3.parseExpression (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3306:19)
+    at Parser.pp$1.parseStatement (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1906:19)
+    at Parser.pp$1.parseBlockBody (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2268:21)
+    at Parser.pp$1.parseTopLevel (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1778:8)
+    at Parser.parse (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1673:17)
+    at parse (C:\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:7305:37)
+2019-04-25T08:37:29.686Z - success: preview server running at http://localhost:7456
+2019-04-25T09:00:50.165Z - error: Can not find cc.Component in the script 461f4ZdVAFPnIenzBUSxRK3.
+    at Object.addComponent (C:\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\scene.js:1:5868)
+    at HTMLElement.add-component (C:\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:1159)
+    at Object.e._dispatch (C:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (C:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-04-25T09:00:52.866Z - error: Can not find cc.Component in the script 461f4ZdVAFPnIenzBUSxRK3.
+    at Object.addComponent (C:\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\scene.js:1:5868)
+    at HTMLElement.add-component (C:\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:1159)
+    at Object.e._dispatch (C:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (C:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-04-25T09:01:06.105Z - error: Can not find cc.Component in the script 461f4ZdVAFPnIenzBUSxRK3.
+    at Object.addComponent (C:\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\scene.js:1:5868)
+    at HTMLElement.add-component (C:\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:1159)
+    at Object.e._dispatch (C:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (C:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-04-25T09:01:27.827Z - error: Can not find cc.Component in the script 461f4ZdVAFPnIenzBUSxRK3.
+    at Object.addComponent (C:\CocosCreator\resources\app.asar\editor\page\scene-utils\utils\scene.js:1:5868)
+    at HTMLElement.add-component (C:\CocosCreator\resources\app.asar\editor\builtin\scene\panel\messages\scene-operation.js:1:1159)
+    at Object.e._dispatch (C:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:1941)
+    at EventEmitter.o.on.s (C:\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:2917)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2019-04-25T09:01:41.825Z - info: shutdown preview server

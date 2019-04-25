@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "eject_btn",
+    "texture": "5de7dc2b-df4c-404d-9f68-d799da224356",
+    "atlas": "",
+    "rect": [
+      6,
+      5,
+      8,
+      15
+    ],
+    "offset": [
+      -2,
+      -0.5
+    ],
+    "originalSize": [
+      24,
+      24
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
