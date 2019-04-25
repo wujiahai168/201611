@@ -8,6 +8,12 @@
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
 
+// window.global = {
+//     score_int = 0,
+// };
+
+var Global = require("global");
+
 cc.Class({
     extends: cc.Component,
 
@@ -25,30 +31,44 @@ cc.Class({
         speed:10,
 
         accSpeedInt:0.2,
+    
+        particle:{
+            type:cc.ParticleAsset,
+            default:null,
+        },
+
+        particleNode:{
+            type:cc.Node,
+            default:null,
+        },
 
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN,this.onKeyDown,this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP,this.onKeyUp,this);
         this.p = cc.find("Canvas/player");
         this.p.color = new cc.Color(255,0,0);
 
-        cc.Scheduler(function(){
-            cc.log("scheduler");
-        },1,1000);
-
-        cc.log("aaaaaaaaaaaaaaaaaa");
+        this.schedule(this.spawnEnemy,1,1000);
 
     },
 
     start () {
-
+        this.particleX = 0;
+        this.particleY = 0;
     },
 
     update (dt) {
+
+        this.particleNode.x = this.particleNode.x + 10;
+        
+        //this.particleNode.x = this.particleX + 50 * dt * ( Math.random() > 0.5 ? -1 : 1 );
+        //this.particleNode.Y = this.particleY + 50 * dt * ( Math.random() > 0.5 ? -1 : 1 );
+
         if( this.accLeft ){
             this.accSpeed += dt+this.accSpeedInt ;
             this.p.x -= this.accSpeed * this.speed;
@@ -130,13 +150,14 @@ cc.Class({
 
     spawnEnemy(){
         var newEnemy = cc.instantiate( this.enemy );
+        cc.log(newEnemy);
         this.node.addChild(newEnemy);
         newEnemy.setPosition( this.setEnemyPosition() );
     },
 
     setEnemyPosition(){
         var x = ( Math.random()>0.5 ? 1 : -1 ) * Math.random() * cc.winSize.width / 2 ;
-        var y = ( Math.random()>0.5 ? 1 : -1 ) * Math.random() * cc.winSize.height / 2 ;
+        var y = (1+Math.random()) * cc.winSize.height / 2 ;
         return cc.v2( x, y );
     },
 
