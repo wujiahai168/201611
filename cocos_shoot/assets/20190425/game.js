@@ -47,9 +47,13 @@ cc.Class({
 
     _onMouseMove(event){
         let v2 = event.getLocation();
-        let v2_new = this.cube.convertToNodeSpaceAR(v2);
-        cc.log(v2_new);
-        this.cube.setPosition(v2_new);
+        var newVec2 = this.cube.convertToNodeSpaceAR(v2);
+        cc.log(newVec2);
+        //let v2_world = this.cube.converToWorldSpace( v2 );
+        this.cube.setPosition( newVec2 );
+        // let v2_new = this.cube.convertToNodeSpaceAR(v2);
+        // cc.log(v2_new);
+        // this.cube.setPosition(v2_new);
 
         //cc.log("_onMouseMove",event.getLocation());
 
