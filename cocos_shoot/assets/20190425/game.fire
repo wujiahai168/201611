@@ -76,7 +76,7 @@
       }
     ],
     "_active": true,
-    "_level": 0,
+    "_level": 1,
     "_components": [
       {
         "__id__": 9
@@ -417,8 +417,9 @@
       "__id__": 2
     },
     "_enabled": true,
-    "cube": {
-      "__id__": 7
+    "cube": null,
+    "bullet": {
+      "__uuid__": "6e073636-2100-4437-aba0-05688c8c6cf2"
     },
     "particle": {
       "__uuid__": "c0ce63ff-a7e3-4046-9411-5bdd75cd6691"
