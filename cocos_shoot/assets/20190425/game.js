@@ -8,22 +8,61 @@
 //  - [Chinese] http://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/creator/en/scripting/life-cycle-callbacks.html
 
+module.exports = {
+    bulletSpeed:300,
+};
+
 cc.Class({
     extends: cc.Component,
 
     properties: {
+        
         cube:{
             type:cc.Node,
             default:null,
-        }
+        },
+
+        bullet:{
+            type:cc.Prefab,
+            default:null,
+        },
+
+        particle:{
+            type:cc.ParticleAsset,
+            default:null,
+        },
+
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        this.canvas = cc.find("Canvas");
         this.cube  = cc.find("Canvas/cube");
+        this.touch = cc.find("Canvas/touch");
 
-        this.node.on(cc.Node.EventType.MOUSE_MOVE,this._onMouseMove,this);
+        //鼠标相对于canvas左下角（即世界坐标）的位置
+        this.node.on(cc.Node.EventType.MOUSE_MOVE,function(event){
+
+            this.v2_world = event.getLocation();
+            this.v2_canvas = this.canvas.convertToNodeSpaceAR( this.v2_world );
+            this.cube.setPosition( this.v2_canvas );
+
+            cc.log( "mouse",this.v2_canvas );
+            cc.log( "cube",this.cube.getPosition() );
+
+        },this);
+
+        this.node.on( cc.Node.EventType.MOUSE_DOWN,function(){
+            let newBullt = cc.instantiate( this.bullet );
+            this.node.addChild(newBullt);
+            newBullt.setPosition(this.v2_canvas);
+
+            cc.log("click");            
+        },this );
+
+
+        //this.node.on(cc.Node.EventType.MOUSE_MOVE,this._onMouseMove,this);
 
         // cc.log(this.cube);
         // this.node.on(cc.Node.EventType.MOUSE_ENTER,function(){
