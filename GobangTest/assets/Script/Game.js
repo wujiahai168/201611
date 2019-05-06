@@ -60,6 +60,9 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+
+        cc.log(this.node);
+
         this.overSprite.node.x = 10000;
         var self = this;
 
@@ -67,18 +70,38 @@ cc.Class({
             for( var x=0; x<15; x++ ){
                 var newNode = cc.instantiate(this.chessPrefab);
                 this.node.addChild( newNode );
-                var v2 = cc.p( x*42+30,y*62+45);
+                var v2 = cc.v2( x*42+30,y*62+45);
                 var v2_world = this.node.convertToNodeSpaceAR( v2 );
                 newNode.setPosition( v2_world );
+
+                //cc.log( newNode.getComponent(cc.Sprite).spriteFrame );
                 
                 newNode.on(cc.Node.EventType.TOUCH_END,function(event){
+                    
                     self.touchChess = this;
-                    if( self.gameState=="black" && this.getComponent(cc.Sprite).SpriteFrame===null ){
-                        this.getComponent( cc.Sprite ).spriteFrame = self.blackSpriteFrame;
+                    // if( self.gameState=="white" && event.target.getComponent(cc.Sprite).spriteFrame == null ){
+                    //     this.getComponent( cc.Sprite ).spriteFrame = self.blackSpriteFrame;
+                    //     self.judgeOver();
+                    //     if( self.gameState=="white" ){
+                    //         self.scheduleOnce(function(){ self.ai(); },1);
+                    //     }
+                    // }
+                    if( self.gameState=="black" && event.target.getComponent(cc.Sprite).spriteFrame == null ){
+                        
+                        event.target.getComponent(cc.Sprite).spriteFrame = this.blackSpriteFrame;
+                        event.target.visible = true;
+
+                        event.target.getComponent( cc.Sprite ).spriteFrame = this.blackSpriteFrame;
                         self.judgeOver();
+                        
+                        self.gameState = "white";
                         if( self.gameState=="white" ){
                             self.scheduleOnce(function(){ self.ai(); },1);
                         }
+                        
+                        // cc.log(this);
+                        // cc.log(this.node);
+                        // cc.log(event);
                     }
                 },this);
 
@@ -87,7 +110,7 @@ cc.Class({
                 //newNode.setTag = y*15+x;
                 newNode._tag = y*15+x;//根据每个节点的tag就可以算出其二维坐标
                 //newNode.setTag( y*15 + x );
-                cc.log(newNode);
+                //cc.log(newNode);
             }
         }
 
@@ -152,6 +175,7 @@ cc.Class({
 
     //电脑下棋
     ai(){
+        cc.log(this.chessList[11]);
 
         //评分
         for( var i=0; i<this.fiveGroup.length; i++ ){
@@ -226,9 +250,11 @@ cc.Class({
 
     },
 
+    
+    judgeOver(){},
 
     //判断
-    judgeOver(){
+    judgeOverTest(){
         var x0 = this.touchChess._tag % 15;
         var y0 = parseInt( this.touchChess._tag / 15 );
         
