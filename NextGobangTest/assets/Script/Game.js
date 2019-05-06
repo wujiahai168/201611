@@ -61,7 +61,7 @@ cc.Class({
 
     onLoad () {
 
-        cc.log(this.node);
+        //cc.log(this.node);
 
         this.overSprite.node.x = 10000;
         var self = this;
@@ -77,8 +77,15 @@ cc.Class({
                 //cc.log( newNode.getComponent(cc.Sprite).spriteFrame );
                 
                 newNode.on(cc.Node.EventType.TOUCH_END,function(event){
+
+                    event.target.getComponent(cc.Sprite).spriteFrame = this.blackSpriteFrame;
+                    event.target.visible = true;
+
+                    event.target.getComponent( cc.Sprite ).spriteFrame = this.blackSpriteFrame;
                     
-                    self.touchChess = this;
+                    self.ai();
+                    
+                    //self.touchChess = this;
                     // if( self.gameState=="white" && event.target.getComponent(cc.Sprite).spriteFrame == null ){
                     //     this.getComponent( cc.Sprite ).spriteFrame = self.blackSpriteFrame;
                     //     self.judgeOver();
@@ -86,23 +93,35 @@ cc.Class({
                     //         self.scheduleOnce(function(){ self.ai(); },1);
                     //     }
                     // }
-                    if( self.gameState=="black" && event.target.getComponent(cc.Sprite).spriteFrame == null ){
+                    // if( self.gameState=="black" && event.target.getComponent(cc.Sprite).spriteFrame == null ){
                         
-                        event.target.getComponent(cc.Sprite).spriteFrame = this.blackSpriteFrame;
-                        event.target.visible = true;
+                    //     event.target.getComponent(cc.Sprite).spriteFrame = this.blackSpriteFrame;
+                    //     event.target.visible = true;
 
-                        event.target.getComponent( cc.Sprite ).spriteFrame = this.blackSpriteFrame;
-                        self.judgeOver();
+                    //     event.target.getComponent( cc.Sprite ).spriteFrame = this.blackSpriteFrame;
                         
-                        self.gameState = "white";
-                        if( self.gameState=="white" ){
-                            self.scheduleOnce(function(){ self.ai(); },1);
-                        }
+                    //     self.ai();
+                    //     self.gameState = "black";
                         
-                        // cc.log(this);
-                        // cc.log(this.node);
-                        // cc.log(event);
-                    }
+                    //     //self.judgeOver();
+                        
+
+
+                    //     //self.gameState = "white";
+                        
+
+
+                    //     // if( self.gameState=="white" ){
+                    //     //     self.ai();
+                    //     //     self.gameState = "black";
+                    //     //     //self.scheduleOnce(function(){ self.ai(); },1);
+                    //     // }
+                        
+                    //     // cc.log(this);
+                    //     // cc.log(this.node);
+                    //     // cc.log(event);
+                    // }
+
                 },this);
 
                 this.chessList.push(newNode);
@@ -123,14 +142,14 @@ cc.Class({
 
         //横向
         for( var y=0; y<15; y++ ){
-            for( var x=0; x<15; x++ ){
+            for( var x=0; x<11; x++ ){
                 this.fiveGroup.push([y*15+x,y*15+x+1,y*15+x+2,y*15+x+3,y*15+x+4]);
             }
         }
 
         //纵向
         for( var x=0; x<15; x++ ){
-            for( var y=0; y<15; y++ ){
+            for( var y=0; y<11; y++ ){
                 this.fiveGroup.push( [y*15+x, (y+1)*15+x, (y+2)*15+x, (y+3)*15+x, (y+4)*15+x ] );
             }
         }
@@ -157,6 +176,9 @@ cc.Class({
             }
         }
 
+        cc.log(this.chessList);
+        cc.log(this.fiveGroup);        
+
     },
 
     start () {
@@ -175,14 +197,20 @@ cc.Class({
 
     //电脑下棋
     ai(){
-        cc.log(this.chessList[11]);
+        //cc.log("chessList",this.chessList);
+        //cc.log("this.fiveGroup[i][j]",this.fiveGroup);
 
+        //cc.log(this.fiveGroup.length);
         //评分
         for( var i=0; i<this.fiveGroup.length; i++ ){
             var b=0;
             var w=0;
             for( var j=0; j<5; j++ ){
+                // cc.log("i,j",i,j);
+                // cc.log("this.fiveGroup[i][j]",this.fiveGroup[i][j]);
+                //cc.log(this.chessList[this.fiveGroup[i][j]]);
                 //this.getComponent(cc.Sprite).spriteFrame;
+                //cc.log( this.chessList[this.fiveGroup[i][j]].getComponent(cc.Sprite) );
                 if( this.chessList[this.fiveGroup[i][j]].getComponent(cc.Sprite).spriteFrame == this.blackSpriteFrame ){
                     b++;
                 }else if( this.chessList[this.fiveGroup[i][j]].getComponent(cc.Sprite).spriteFrame == this.whiteSpriteFrame ){
@@ -231,27 +259,36 @@ cc.Class({
         var nPosition = 0;
 
         for( var i=0; i<5; i++ ){
-            if( !flag1 && this.chessList[this.fiveGroup[mPosition]].getComponent(cc.SpriteFrame == null) ){
+
+            cc.log(this.fiveGroup[mPosition]);
+            cc.log(this.chessList[this.fiveGroup[mPosition]] );
+
+            if( !flag1 && this.chessList[this.fiveGroup[mPosition][i]].getComponent(cc.Sprite).spriteFrame == null ){
                 nPosition = (function(x){return x;})(i);
             }
-            if( !flag2 && this.chessList[this.fiveGroup[mPosition]].getComponent(cc.SpriteFrame) != null ){
+            if( !flag2 && this.chessList[this.fiveGroup[mPosition][i]].getComponent(cc.Sprite).spriteFrame != null ){
                 flag1 = true;
                 flag2 = true;
             }
-            if( !flag2 && this.chessList[this.fiveGroup[mPosition]].getComponent(cc.SpriteFrame) == null ){
-                nPos = (function(x){return x;})(i);
+            if( !flag2 && this.chessList[this.fiveGroup[mPosition][i]].getComponent(cc.Sprite).spriteFrame == null ){
+                nPosition = (function(x){return x;})(i);
                 break;
             }
         }
 
         this.chessList[this.fiveGroup[mPosition][nPosition]].getComponent( cc.Sprite );
-        this.touchChess = this.chessList[his.fiveGroup[mPosition][nPosition]];
-        this.judgeOver();
+        this.touchChess = this.chessList[this.fiveGroup[mPosition][nPosition]];
+        
+        cc.log("touchChess",this.touchChess);
+        //落子
+        this.chessList[this.fiveGroup[mPosition][nPosition]].getComponent(cc.Sprite).spriteFrame = this.whiteSpriteFrame;
+        
+        //this.judgeOver();
 
     },
 
     
-    judgeOver(){},
+    judgeOver(){ return; },
 
     //判断
     judgeOverTest(){
