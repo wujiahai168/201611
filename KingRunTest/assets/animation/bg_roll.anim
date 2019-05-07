@@ -3,8 +3,8 @@
   "_name": "bg_roll",
   "_objFlags": 0,
   "_native": "",
-  "_duration": 30,
-  "sample": 12,
+  "_duration": 12,
+  "sample": 30,
   "speed": 1,
   "wrapMode": "2",
   "curveData": {
@@ -12,10 +12,18 @@
       "x": [
         {
           "frame": 0,
-          "value": 2590
+          "value": 2500
         },
         {
-          "frame": 30,
+          "frame": 2.9,
+          "value": 2829
+        },
+        {
+          "frame": 11.966666666666667,
+          "value": -2903
+        },
+        {
+          "frame": 12,
           "value": -2593
         }
       ]
