@@ -12,27 +12,77 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        king:{
+            type:cc.Node,
+            default:null,
+        }
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         
+        //cc.log( "down", cc.macro.KEY.down );
+
+        var view_w = cc.director.getWinSize();
+        var king = cc.find("Canvas/King");
+
+        this.node.on( cc.Node.EventType.MOUSE_DOWN,function(event){
+            
+            let x = event.getLocationX();
+            
+            //左侧，就跳起来
+            if( x < view_w.width/2 ){
+                cc.log("左边");
+                cc.log(king);
+                
+                this.king.getComponent("king").jump();
+                
+                // king.getComponent(cc.Animation).stop();
+                // king.runAction( cc.jumpBy(1,cc.v2(0,0),200,1) );
+                // king.getComponent(cc.Animation).play("king_run");
+
+            }else{
+                cc.log("右边");
+
+                this.king.getComponent("king").down();
+
+            }
+
+            // cc.log(event);
+            // cc.log(x);
+            // cc.log(view_w.width);
+
+        },this);
+
+        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN ,function( event ){
+
+            //cc.log( "KEY_DOWN" ,event, event.keyCode );
+            switch( event.keyCode ){
+                
+                case cc.macro.KEY.down:
+                    cc.log("按下down");
+                    this.king.getComponent("king").downRelease();
+                    break;
+            }
+
+        },this);
+
+
+        // this.node.on( cc.Node.EventType.MOUSE_UP,function(event){
+
+        //     // let x = event.getLocationX();
+
+        //     // if( x < view_w/2 ){
+        //     //     cc.log("左边放松");
+        //     // }
+
+        // },this );
+
+        // cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN,function(){
+        //     cc.log("key_down");    
+        // },this);
+
     },
 
     start () {

@@ -1,10 +1,10 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "boom_hight",
+  "_name": "boom_high",
   "_objFlags": 0,
   "_native": "",
-  "_duration": 0.25,
-  "sample": 60,
+  "_duration": 3,
+  "sample": 10,
   "speed": 1,
   "wrapMode": 1,
   "curveData": {
@@ -12,14 +12,20 @@
       "x": [
         {
           "frame": 0,
-          "value": 585
+          "value": 569
         },
         {
-          "frame": 0.25,
+          "frame": 3,
           "value": -630
         }
       ]
     }
   },
-  "events": []
+  "events": [
+    {
+      "frame": 1.3,
+      "func": "judgeDown",
+      "params": []
+    }
+  ]
 }
