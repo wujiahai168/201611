@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="all" tilewidth="32" tileheight="32">
+  <image source="all.png" width="512" height="512"/>
+ </tileset>
+ <layer name="块层 1" width="20" height="20" opacity="0.97">
+  <data encoding="base64" compression="zlib">
+   eJxjYmBgYGYgHkwE4kl45IWAWBjKZiLC7IVAvIhIu5HNJheYALEpEJuhsdmobJ4Yhe7EBVJpZC61Ab50Qo4fSEknxLiBGHCJCm5ABo9wiBMKD3R5ZD6lfkQHlPoRGaCHHzZATFqAqcEVftQC5KRLcvMjPn3IcYoev8TGN7I65DhFj19i4xuXOgBLUB13
+  </data>
+ </layer>
+ <layer name="块层 2" width="20" height="20" visible="0" opacity="0.2">
+  <data encoding="base64" compression="zlib">
+   eJyNlNENgzAMRK1+pEwQmCAwAe3+kzWVctLjcNQiWQmOfficMyUint2WbgX72m01n2wb54rZYPRxX4bJ90DO0a0N28f7Af+e7OvAy3K85jfs7PZK9m1g0uc4qrcgjjGs5cR7GXwZK97ikvWMtQTytVbDFMcFdfD8F556oO8rlvsZX+KprtNieE+8xxlfnTVgM0arOL9jrpcwDPKgNlmPz8Ssf9ns1Lhreok5X9dGieu9tBHPnC357pr41Wfei2NlemkTv+Yumxnn9Q9fYVAvPkuc0z3u2vV1sdzZ3FOzK3qU4ZW4aqUZFvWc6cHxa1y1UgyPfNlH6qrFXW+qy//PAXzvL/vkevO70Qx/nw9GYyyr
+  </data>
+ </layer>
+ <objectgroup name="对象层 1">
+  <object x="200" y="212.667" width="40" height="92"/>
+  <object x="260" y="284" width="69.3333" height="112.667"/>
+  <object x="315.333" y="74" width="70" height="87.3333">
+   <ellipse/>
+  </object>
+  <object x="320.667" y="422.667">
+   <polygon points="0,0 76,12.6667 20,83.3333"/>
+  </object>
+  <object x="138.667" y="483.333">
+   <polyline points="0,0 36,-29.3333 78,-41.3333 89.3333,-70 132.667,-64 209.333,-88"/>
+  </object>
+ </objectgroup>
+</map>
