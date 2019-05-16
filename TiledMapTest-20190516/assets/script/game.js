@@ -31,7 +31,16 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad () {
+        
+        // this.node.on( cc.Node.EventType.MOUSE_MOVE,function(event){           
+        //     cc.log( "game mouse_enter" );
+        //     cc.log( event.getLocation() );
+        //     cc.log( event.target );
+        //     cc.log( event.target );
+        // },this );
+
+    },
 
     start () {
 
