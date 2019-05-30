@@ -32,6 +32,8 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+
+        cc.log("cat",this);
         
         var t = this;
 

@@ -114,7 +114,74 @@ cc.Class({
         xhr.send();
     },
 
+    btnTest( customEventData, delta ){
 
+
+        let action = cc.speed(
+            cc.spawn(
+                cc.moveTo( 2, 200, 200 ),
+                cc.rotateBy( 3 , 60 )
+            ),
+
+            0.1
+            
+        );
+
+        let dog = this.node.getChildByName( "dog" );
+        dog.runAction( action );
+
+        let dogNew = cc.instantiate( dog );
+        this.node.addChild( dogNew );
+
+        let actionNew = cc.repeatForever(
+            cc.sequence(
+                cc.moveBy( 2, 0, 200 ),
+                cc.moveBy( 1, 0, -200 ),
+            )
+        );
+
+        actionNew = cc.speed(
+            actionNew,
+            5
+        );
+
+        dogNew.runAction( actionNew );
+
+        // cc.log( "customEventData",customEventData );
+        // cc.log( "delta",delta );
+
+        // let dog = this.node.getChildByName( "dog" );
+        // //cc.log( "dog",this );
+
+        // let rotate = cc.rotateBy( 4 , delta );
+        // dog.runAction( rotate );
+    },
+
+    playAnimation(){
+        let house = this.node.getChildByName( "house" );
+        let houseAn = house.getComponent( cc.Animation );
+
+
+        cc.log( "play" , houseAn.getClips() );
+
+        // houseAn.defaultClip = "house";
+        // houseAn.playOnLoad = true;
+        houseAn.play("house2",0.5);
+        //houseAn.playAdditive("house");
+        //houseAn.play();
+    },
+
+    pauseAnimation(){
+        let house = this.node.getChildByName( "house" );
+        let houseAn = house.getComponent( cc.Animation );
+        houseAn.pause();
+    },
+
+    resumeAnimation(){
+        let house = this.node.getChildByName( "house" );
+        let houseAn = house.getComponent( cc.Animation );
+        houseAn.resume();
+    },
 
 
 });
