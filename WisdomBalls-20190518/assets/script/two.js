@@ -86,7 +86,13 @@ cc.Class({
 
     },
 
-    // update (dt) {},
+    update (dt) {
+        cc.log("update");
+    },
+
+    lateUpdate(dt){
+        cc.log("lateUpdate");
+    },
 
     onDestroy(){        
         this.node.off( "hi", this.onDisplay, this );
