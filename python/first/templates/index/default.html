@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    img
+    <image src="{{ img | default('https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=829044612,3699393036&fm=27&gp=0.jpg') }}" />
+
+
+    <hr>
+    评论数量：{{ comments | length }}
+    {% for comment in comments %}
+        <p>{{ comment.user }}----{{ comment.content }}</p>
+    {% endfor %}
+
+
+
+</body>
+</html>

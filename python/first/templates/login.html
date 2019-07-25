@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+    <div>
+        <h2>{{ abc }}</h2>
+        <image src="{{ url_for('static',filename='image/png.png') }}"></image>
+    </div>
+
+<form action="{{ url_for('login') }}" method="post">
+    <input type="text" name="name">
+    <input type="password" name="pass">
+    <input type="submit" value="登录">
+</form>
+
+</body>
+</html>

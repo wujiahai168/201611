@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+
+    <style>
+        .nav{
+            background-color: #3f3f3f;
+            height: 70px;
+        }
+        .ul{
+
+        }
+        .ul li{
+            list-style: none;
+            float:left;
+            padding: 0 20px;
+            line-height: 70px;
+            height: 100%;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+
+        <ul class="ul">
+            <li>首页</li>
+            <li>列表</li>
+        </ul>
+
+    </nav>
+
+    {% block main %}
+
+    {% endblock %}
+
+</body>
+</html>

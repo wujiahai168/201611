@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for("static",filename='css/index.css' ) }}" />
+{#    <script src="{{ url_for( "static", filename='js/index.js' ) }}"></script>#}
+</head>
+<body>
+
+    <h1>构造 URLdk;fj;ksfjsfkjkasdfafafsaf</h1>
+    <p>
+        如果 Flask 能匹配 URL，那么 Flask 可以生成它们吗？当然可以。你可以用 url_for()
+        来给指定的函数构造 URL。它接受函数名作为第一个参数，也接受对应 URL 规则的变量部
+        分的命名参数。未知变量部分会添加到 URL 末尾作为查询参数。这里有一些例子:
+    </p>
+    <image src="{{ url_for( "static",filename='image/png.png' ) }}" />
+
+
+</body>
+</html>
+
+
+
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <meta charset="UTF-8">#}
+{#    <title>Title</title>#}
+{#</head>#}
+{#<body>#}
+{#    index.htmlindex.htmlindex.htmlindex.htmlindex.htmlindex.htmlindex.html#}
+{#    <p>----------{{ user }}</p>#}
+{#    <p>----------{{ gender }}</p>#}
+{#    <p>----------{{ age }}</p>#}
+{##}
+{##}
+{#    <hr>#}
+{#    <p>{{ person.name }}-----{{ person.like }}</p>#}
+{##}
+{#    <hr>#}
+{#    <p>{{ websites.baidu }}-----{{ websites['126'] }}</p>#}
+{##}
+{#</body>#}
+{#</html>#}
