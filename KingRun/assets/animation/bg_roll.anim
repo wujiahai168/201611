@@ -1,0 +1,24 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "bg_roll",
+  "_objFlags": 0,
+  "_duration": 6.125,
+  "sample": 8,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "x": [
+        {
+          "frame": 0,
+          "value": 2436
+        },
+        {
+          "frame": 6.125,
+          "value": -1645
+        }
+      ]
+    }
+  },
+  "events": []
+}

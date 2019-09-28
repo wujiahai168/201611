@@ -1,0 +1,127 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "house",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 2,
+  "sample": 5,
+  "speed": 1,
+  "wrapMode": "2",
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            -138,
+            205
+          ]
+        },
+        {
+          "frame": 2,
+          "value": [
+            135,
+            -157
+          ]
+        }
+      ],
+      "scale": [
+        {
+          "frame": 0,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 1,
+            "y": 2
+          }
+        },
+        {
+          "frame": 2,
+          "value": {
+            "__type__": "cc.Vec2",
+            "x": 2,
+            "y": 1
+          }
+        }
+      ],
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        },
+        {
+          "frame": 1,
+          "value": 50
+        },
+        {
+          "frame": 1.4,
+          "value": 240
+        },
+        {
+          "frame": 2,
+          "value": 255
+        }
+      ],
+      "rotation": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 0.6,
+          "value": 60
+        },
+        {
+          "frame": 1.4,
+          "value": 120
+        },
+        {
+          "frame": 2,
+          "value": 360
+        }
+      ],
+      "color": [
+        {
+          "frame": 0,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 255,
+            "g": 255,
+            "b": 255,
+            "a": 255
+          }
+        },
+        {
+          "frame": 0.8,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 206,
+            "g": 153,
+            "b": 255,
+            "a": 255
+          }
+        },
+        {
+          "frame": 1.2,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 255,
+            "g": 0,
+            "b": 0,
+            "a": 255
+          }
+        },
+        {
+          "frame": 2,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 0,
+            "g": 255,
+            "b": 20,
+            "a": 255
+          }
+        }
+      ]
+    }
+  },
+  "events": []
+}

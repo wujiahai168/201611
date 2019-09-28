@@ -4,36 +4,73 @@
 	<Project>
 		<Option title="201904" />
 		<Option pch_mode="2" />
+<<<<<<< HEAD
 		<Option compiler="gcc" />
+=======
+		<Option compiler="msvc10" />
+>>>>>>> 6f11cf80907abf4ff29b50f7924085ab5f3b5e4e
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/201904" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
+<<<<<<< HEAD
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
+=======
+				<Option compiler="msvc10" />
+				<Compiler>
+					<Add option="/Zi" />
+					<Add option="/D_DEBUG" />
+					<Add option="/MDd" />
+				</Compiler>
+				<Linker>
+					<Add option="/DEBUG" />
+					<Add library="msvcrtd.lib" />
+					<Add library="msvcprtd.lib" />
+				</Linker>
+>>>>>>> 6f11cf80907abf4ff29b50f7924085ab5f3b5e4e
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/201904" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
+<<<<<<< HEAD
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+=======
+				<Option compiler="msvc10" />
+				<Compiler>
+					<Add option="/Ox" />
+					<Add option="/DNDEBUG" />
+					<Add option="/MD" />
+				</Compiler>
+				<Linker>
+					<Add library="msvcrt.lib" />
+					<Add library="msvcprt.lib" />
+>>>>>>> 6f11cf80907abf4ff29b50f7924085ab5f3b5e4e
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
+<<<<<<< HEAD
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+=======
+			<Add option="/W3" />
+			<Add option="/EHsc" />
+		</Compiler>
+		<Unit filename="main.cpp" />
+>>>>>>> 6f11cf80907abf4ff29b50f7924085ab5f3b5e4e
 		<Extensions>
 			<code_completion />
 			<envvars />

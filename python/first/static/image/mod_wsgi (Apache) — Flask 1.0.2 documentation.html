@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mod_wsgi (Apache) — Flask 1.0.2 documentation</title>
+    <link rel="stylesheet" href="mod_wsgi%20(Apache)%20%E2%80%94%20Flask%201.0.2%20documentation_files/pocoo.css" type="text/css">
+    <link rel="stylesheet" href="mod_wsgi%20(Apache)%20%E2%80%94%20Flask%201.0.2%20documentation_files/pygments.css" type="text/css">
+    <link rel="stylesheet" href="mod_wsgi%20(Apache)%20%E2%80%94%20Flask%201.0.2%20documentation_files/badge_only.css" type="text/css">
+    <script async="" src="mod_wsgi%20(Apache)%20%E2%80%94%20Flask%201.0.2%20documentation_files/analytics.js"></script><script type="text/javascript" src="mod_wsgi%20(Apache)%20%E2%80%94%20Flask%201.0.2%20documentation_files/documentation_options.js"></script>
+    <script type="text/javascript" src="mod_wsgi%20(Apache)%20%E2%80%94%20Flask%201.0.2%20documentation_files/jquery-2.js"></script>
+    <script type="text/javascript" src="mod_wsgi%20(Apache)%20%E2%80%94%20Flask%201.0.2%20documentation_files/jquery-migrate-1.js"></script>
+    <script type="text/javascript" src="mod_wsgi%20(Apache)%20%E2%80%94%20Flask%201.0.2%20documentation_files/underscore.js"></script>
+    <script type="text/javascript" src="mod_wsgi%20(Apache)%20%E2%80%94%20Flask%201.0.2%20documentation_files/doctools.js"></script>
+    <script type="text/javascript" src="mod_wsgi%20(Apache)%20%E2%80%94%20Flask%201.0.2%20documentation_files/readthedocs-doc-embed.js"></script>
+    <link rel="shortcut icon" href="https://dormousehole.readthedocs.io/en/latest/_static/flask-favicon.ico">
+    <link rel="index" title="Index" href="https://dormousehole.readthedocs.io/en/latest/genindex.html">
+    <link rel="search" title="Search" href="https://dormousehole.readthedocs.io/en/latest/search.html">
+    <link rel="next" title="FastCGI" href="https://dormousehole.readthedocs.io/en/latest/deploying/fastcgi.html">
+    <link rel="prev" title="uWSGI" href="https://dormousehole.readthedocs.io/en/latest/deploying/uwsgi.html">
+    <link rel="canonical" href="https://dormousehole.readthedocs.io/en/latest/">
+  
+<!-- RTD Extra Head -->
+
+<!-- 
+Always link to the latest version, as canonical.
+http://docs.readthedocs.org/en/latest/canonical.html
+-->
+<link rel="canonical" href="https://dormousehole.readthedocs.io/en/latest/deploying/mod_wsgi.html">
+
+<link rel="stylesheet" href="mod_wsgi%20(Apache)%20%E2%80%94%20Flask%201.0.2%20documentation_files/readthedocs-doc-embed.css" type="text/css">
+
+<script type="text/javascript" src="mod_wsgi%20(Apache)%20%E2%80%94%20Flask%201.0.2%20documentation_files/readthedocs-data.js"></script>
+
+<!-- Add page-specific data, which must exist in the page js, not global -->
+<script type="text/javascript">
+READTHEDOCS_DATA['page'] = 'deploying/mod_wsgi'
+READTHEDOCS_DATA['source_suffix'] = '.rst'
+</script>
+
+<script type="text/javascript" src="mod_wsgi%20(Apache)%20%E2%80%94%20Flask%201.0.2%20documentation_files/readthedocs-analytics.js"></script>
+
+<!-- end RTD <extrahead> -->
+</head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="https://dormousehole.readthedocs.io/en/latest/genindex.html" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="https://dormousehole.readthedocs.io/en/latest/py-modindex.html" title="Python Module Index">modules</a> |</li>
+        <li class="right">
+          <a href="https://dormousehole.readthedocs.io/en/latest/deploying/fastcgi.html" title="FastCGI" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="https://dormousehole.readthedocs.io/en/latest/deploying/uwsgi.html" title="uWSGI" accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="https://dormousehole.readthedocs.io/en/latest/index.html">Flask 1.0.2 documentation</a> »</li>
+          <li class="nav-item nav-item-1"><a href="https://dormousehole.readthedocs.io/en/latest/deploying/index.html" accesskey="U">部署方式</a> »</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="mod-wsgi-apache">
+<span id="mod-wsgi-deployment"></span><h1>mod_wsgi (Apache)<a class="headerlink" href="#mod-wsgi-apache" title="Permalink to this headline">¶</a></h1>
+<p>如果你正在使用 <a class="reference external" href="https://httpd.apache.org/">Apache</a> 网络服务器，那么建议使用 <a class="reference external" href="https://github.com/GrahamDumpleton/mod_wsgi">mod_wsgi</a> 。</p>
+<div class="admonition- admonition">
+<p class="first admonition-title">小心</p>
+<p class="last">请务必把 <code class="docutils literal notranslate"><span class="pre">app.run()</span></code> 放在 <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__':</span></code> 内部或
+者放在单独的文件中，这样可以保证它不会被调用。因为，每调用一次就会
+开启一个本地 WSGI 服务器。当我们使用 mod_wsgi 部署应用时，不需要使
+用本地服务器。</p>
+</div>
+<div class="section" id="mod-wsgi">
+<h2>安装 <cite>mod_wsgi</cite><a class="headerlink" href="#mod-wsgi" title="Permalink to this headline">¶</a></h2>
+<p>可以使用包管理器或编译的方式安装 <cite>mod_wsgi</cite> 。在 UNIX 系统中如何使用源代码
+安装请阅读 mod_wsgi <a class="reference external" href="https://modwsgi.readthedocs.io/en/develop/installation.html">安装介绍</a> 。</p>
+<p>如果你使用的是 Ubuntu/Debian ，那么可以使用如下命令安装：</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># apt-get install libapache2-mod-wsgi
+</pre></div>
+</div>
+<p>如果使用基于 yum 的发行版（ Fedora 、 OpenSUSE 等等），可以这样安装：</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># yum install mod_wsgi
+</pre></div>
+</div>
+<p>在 FreeBSD 系统中，可以通过编译 <cite>www/mod_wsgi</cite> port 或使用 pkg_add 来安装
+<cite>mod_wsgi</cite> ：</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span># pkg_add -r mod_wsgi
+</pre></div>
+</div>
+<p>如果你使用 pkgsrc ，那么可以通过编译 <cite>www/ap2-wsgi</cite> 包来安装 <cite>mod_wsgi</cite> 。</p>
+<p>如果你遇到子进程段错误的话，不要理它，重启服务器就可以了。</p>
+</div>
+<div class="section" id="wsgi">
+<h2>创建一个 <cite>.wsgi</cite> 文件<a class="headerlink" href="#wsgi" title="Permalink to this headline">¶</a></h2>
+<p>为了运行应用，你需要一个 <code class="file docutils literal notranslate"><span class="pre">yourapplication.wsgi</span></code> 文件。这个文件包含
+<cite>mod_wsgi</cite> 开始时需要运行的代码，通过代码可以获得应用对象。文件中的
+<cite>application</cite> 对象就是以后要使用的应用。</p>
+<p>对于大多数应用来说，文件包含以下内容就可以了:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">yourapplication</span> <span class="k">import</span> <span class="n">app</span> <span class="k">as</span> <span class="n">application</span>
+</pre></div>
+</div>
+<p>如果你的应用没有创建函数，只是一个独立的实例，那么可以直接把实例导入为
+<cite>application</cite> 。</p>
+<p>把文件放在一个以后可以找得到的地方（例如 <code class="file docutils literal notranslate"><span class="pre">/var/www/yourapplication</span></code>
+），并确保 <cite>yourapplication</cite> 和所有需要使用的库都位于 pythonpath 中。如果
+你不想在整个系统中安装，建议使用 <a class="reference external" href="https://pypi.org/project/virtualenv/">virtual python</a> 实例。请记住，最好把应
+用安装到虚拟环境中。有一个可选项是在 <code class="docutils literal notranslate"><span class="pre">.wsgi</span></code> 文件中，在导入前加入路径:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">'/path/to/the/application'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id1">
+<h2>配置 Apache<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>最后一件事是为你的应用创建一个 Apache 配置文件。基于安全原因，在下例中我们
+告诉 <cite>mod_wsgi</cite> 使用另外一个用户运行应用：</p>
+<div class="highlight-apache notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;VirtualHost</span> <span class="s">*</span><span class="nt">&gt;</span>
+    <span class="nb">ServerName</span> example.com
+
+    <span class="nb">WSGIDaemonProcess</span> yourapplication <span class="k">user</span>=user1 <span class="k">group</span>=group1 threads=5
+    <span class="nb">WSGIScriptAlias</span> / <span class="sx">/var/www/yourapplication/yourapplication.wsgi</span>
+
+    <span class="nt">&lt;Directory</span> <span class="s">/var/www/yourapplication</span><span class="nt">&gt;</span>
+        <span class="nb">WSGIProcessGroup</span> yourapplication
+        <span class="nb">WSGIApplicationGroup</span> %{GLOBAL}
+        <span class="nb">Order</span> deny,allow
+        <span class="nb">Allow</span> from <span class="k">all</span>
+    <span class="nt">&lt;/Directory&gt;</span>
+<span class="nt">&lt;/VirtualHost&gt;</span>
+</pre></div>
+</div>
+<p>注意： WSGIDaemonProcess 在 Windows 中不会被执行， 使用上面的配置 Apache
+会拒绝运行。在 Windows 系统下，请使用下面内容：</p>
+<div class="highlight-apache notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;VirtualHost</span> <span class="s">*</span><span class="nt">&gt;</span>
+        <span class="nb">ServerName</span> example.com
+        <span class="nb">WSGIScriptAlias</span> / C:\yourdir\yourapp.wsgi
+        <span class="nt">&lt;Directory</span> <span class="s">C:\yourdir</span><span class="nt">&gt;</span>
+                <span class="nb">Order</span> deny,allow
+                <span class="nb">Allow</span> from <span class="k">all</span>
+        <span class="nt">&lt;/Directory&gt;</span>
+<span class="nt">&lt;/VirtualHost&gt;</span>
+</pre></div>
+</div>
+<p>注意： <a class="reference external" href="https://httpd.apache.org/docs/trunk/upgrading.html">Apache 2.4</a> 的权限控制配置有一些变化。</p>
+<p>最值得注意的是： httpd 2.2 的文件夹权限的语法</p>
+<div class="highlight-apache notranslate"><div class="highlight"><pre><span></span><span class="nb">Order</span> allow,deny
+<span class="nb">Allow</span> from <span class="k">all</span>
+</pre></div>
+</div>
+<p>改变为 httpd 2.4 语法</p>
+<div class="highlight-apache notranslate"><div class="highlight"><pre><span></span><span class="nb">Require</span> <span class="k">all</span> granted
+</pre></div>
+</div>
+<p>更多内容参见 <a class="reference external" href="https://modwsgi.readthedocs.io/en/develop/index.html">mod_wsgi 文档</a>.</p>
+</div>
+<div class="section" id="id5">
+<h2>故障排除<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>如果你的应用无法运行，请按以下指导排除故障：</p>
+<dl class="docutils">
+<dt><strong>问题：</strong> 应用无法运行，出错记录显示 SystemExit ignored</dt>
+<dd>应用文件中有 <code class="docutils literal notranslate"><span class="pre">app.run()</span></code> 调用，但没有放在
+<code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">__name__</span> <span class="pre">==</span> <span class="pre">'__main__':</span></code> 块内。要么把这个调用放入块内，要么把它
+放在一个单独的 <code class="file docutils literal notranslate"><span class="pre">run.py</span></code> 文件中。</dd>
+<dt><strong>问题：</strong> 权限错误</dt>
+<dd>有可以是因为使用了错误的用户运行应用。请检查用户及其所在的组
+（ <cite>WSGIDaemonProcess</cite> 的 <code class="docutils literal notranslate"><span class="pre">user</span></code> 和 <code class="docutils literal notranslate"><span class="pre">group</span></code> 参数）是否有权限访问应
+用文件夹。</dd>
+<dt><strong>问题：</strong> 打印时应用歇菜</dt>
+<dd><p class="first">请记住 mod_wsgi 不允许使用 <a class="reference external" href="https://docs.python.org/3/library/sys.html#sys.stdout" title="(in Python v3.7)"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.stdout</span></code></a> 和 <a class="reference external" href="https://docs.python.org/3/library/sys.html#sys.stderr" title="(in Python v3.7)"><code class="xref py py-data docutils literal notranslate"><span class="pre">sys.stderr</span></code></a> 。
+把 <cite>WSGIRestrictStdout</cite> 设置为 <code class="docutils literal notranslate"><span class="pre">off</span></code> 可以去掉这个保护：</p>
+<div class="highlight-apache notranslate"><div class="highlight"><pre><span></span><span class="nb">WSGIRestrictStdout</span> <span class="k">Off</span>
+</pre></div>
+</div>
+<p>或者你可以在 .wsgi 文件中把标准输出替换为其他的流:</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">stdout</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">stderr</span>
+</pre></div>
+</div>
+</dd>
+<dt><strong>问题：</strong> 访问资源时遇到 IO 错误</dt>
+<dd><p class="first">你的应用可能是一个独立的 .py 文件，且你把它符号连接到了 site-packages
+文件夹。这样是不对的，你应当要么把文件夹放到 pythonpath 中，要么把你的
+应用转换为一个包。</p>
+<p class="last">产生这种错误的原因是对于非安装包来说，模块的文件名用于定位资源，如果使
+用符号连接的话就会定位到错误的文件名。</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="id6">
+<h2>支持自动重载<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>为了辅助部署工具，你可以激活自动重载。这样，一旦 <code class="docutils literal notranslate"><span class="pre">.wsgi</span></code> 文件有所变动，
+<cite>mod_wsgi</cite> 就会自动重新转入所有守护进程。</p>
+<p>在 <cite>Directory</cite> 一节中加入以下指令就可以实现自动重载：</p>
+<div class="highlight-apache notranslate"><div class="highlight"><pre><span></span><span class="nb">WSGIScriptReloading</span> <span class="k">On</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>使用虚拟环境<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>使用虚拟环境的优点是不必全局安装应用所需要的依赖，这样我们就可以更好地按照
+自己的需要进行控制。如果要在虚拟环境下使用 mod_wsgi ，那么我们要对
+<code class="docutils literal notranslate"><span class="pre">.wsgi</span></code> 略作改变。</p>
+<p>在你的 <code class="docutils literal notranslate"><span class="pre">.wsgi</span></code> 文件顶部加入下列内容:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">activate_this</span> <span class="o">=</span> <span class="s1">'/path/to/env/bin/activate_this.py'</span>
+<span class="n">execfile</span><span class="p">(</span><span class="n">activate_this</span><span class="p">,</span> <span class="nb">dict</span><span class="p">(</span><span class="vm">__file__</span><span class="o">=</span><span class="n">activate_this</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Python 3 中需要把下列内容添加到你的 <code class="docutils literal notranslate"><span class="pre">.wsgi</span></code> 文件顶端:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">activate_this</span> <span class="o">=</span> <span class="s1">'/path/to/env/bin/activate_this.py'</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">activate_this</span><span class="p">)</span> <span class="k">as</span> <span class="n">file_</span><span class="p">:</span>
+    <span class="n">exec</span><span class="p">(</span><span class="n">file_</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="nb">dict</span><span class="p">(</span><span class="vm">__file__</span><span class="o">=</span><span class="n">activate_this</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>以上代码会根据虚拟环境的设置载入相关路径。请记住路径必须是绝对路径。</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+  <span id="sidebar-top"></span>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="https://dormousehole.readthedocs.io/en/latest/index.html">
+              <img class="logo" src="mod_wsgi%20(Apache)%20%E2%80%94%20Flask%201.0.2%20documentation_files/flask.png" alt="Logo">
+            </a></p>
+  <h3>目录</h3>
+  <ul>
+<li><a class="reference internal" href="#">mod_wsgi (Apache)</a><ul>
+<li><a class="reference internal" href="#mod-wsgi">安装 <cite>mod_wsgi</cite></a></li>
+<li><a class="reference internal" href="#wsgi">创建一个 <cite>.wsgi</cite> 文件</a></li>
+<li><a class="reference internal" href="#id1">配置 Apache</a></li>
+<li><a class="reference internal" href="#id5">故障排除</a></li>
+<li><a class="reference internal" href="#id6">支持自动重载</a></li>
+<li><a class="reference internal" href="#id7">使用虚拟环境</a></li>
+</ul>
+</li>
+</ul>
+<h3>Navigation</h3>
+<ul>
+  <li><a href="https://dormousehole.readthedocs.io/en/latest/index.html">概览</a>
+    <ul>
+      <li><a href="https://dormousehole.readthedocs.io/en/latest/deploying/index.html">部署方式</a>
+        <ul>
+          <li>Previous: <a href="https://dormousehole.readthedocs.io/en/latest/deploying/uwsgi.html" title="previous chapter">uWSGI</a>
+          </li><li>Next: <a href="https://dormousehole.readthedocs.io/en/latest/deploying/fastcgi.html" title="next chapter">FastCGI</a></li></ul>
+      </li>
+    </ul>
+  </li>
+</ul>  <h3>版本</h3>
+   <ul class="versions">
+    
+      <li><a href="http://flask.pocoo.org/docs/dev/">开发版</a>
+      <span class="note">（不稳定）</span>
+    
+      </li><li><a href="http://flask.pocoo.org/docs/1.0/" class="current">Flask 1.0</a>
+      <span class="note">（稳定）</span>
+    
+      </li><li><a href="http://flask.pocoo.org/docs/0.12/">Flask 0.12</a>
+  </li></ul>
+<div id="searchbox" style="" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q">
+      <input type="submit" value="Go">
+      <input type="hidden" name="check_keywords" value="yes">
+      <input type="hidden" name="area" value="default">
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        © Copyright 2010 Pallets Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.4.
+    </div>
+  
+<div id="rtd-9vvbirb1"></div><!-- Inserted RTD Footer -->
+<div class="injected">
+
+  
+  <div class="rst-versions rst-badge" data-toggle="rst-versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book">&nbsp;</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      
+
+      
+      
+      
+      <dl>
+        <dt>Versions</dt>
+        
+         <strong> 
+        <dd><a href="https://dormousehole.readthedocs.io/en/latest/deploying/mod_wsgi.html">latest</a></dd>
+         </strong> 
+        
+        
+        <dd><a href="https://dormousehole.readthedocs.io/en/stable/deploying/mod_wsgi.html">stable</a></dd>
+        
+        
+        
+        <dd><a href="https://dormousehole.readthedocs.io/en/1.0/deploying/mod_wsgi.html">1.0</a></dd>
+        
+        
+      </dl>
+      
+      
+
+      
+      
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="https://readthedocs.org/projects/dormousehole/downloads/pdf/latest/">PDF</a></dd>
+        
+        <dd><a href="https://readthedocs.org/projects/dormousehole/downloads/htmlzip/latest/">HTML</a></dd>
+        
+        <dd><a href="https://readthedocs.org/projects/dormousehole/downloads/epub/latest/">Epub</a></dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        <!-- These are kept as relative links for internal installs that are http -->
+        <dt>On Read the Docs</dt>
+        <dd>
+          <a href="https://readthedocs.org/projects/dormousehole/">Project Home</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/dormousehole/builds/">Builds</a>
+        </dd>
+        <dd>
+          <a href="https://readthedocs.org/projects/dormousehole/downloads/">Downloads</a>
+        </dd>
+      </dl>
+      
+
+      
+
+      
+      <dl>
+        <dt>On GitHub</dt>
+        <dd>
+          <a href="https://github.com/dormouse/Flask_Docs_ZhCn/blob/master//deploying/mod_wsgi.rst">View</a>
+        </dd>
+        
+      </dl>
+      
+      
+
+      
+      <dl>
+        <dt>Search</dt>
+        <dd>
+          <div style="padding: 6px;">
+            <form id="flyout-search-form" class="wy-form" target="_blank" action="//readthedocs.org/projects/dormousehole/search/" method="get">
+              <input type="text" name="q" placeholder="Search docs">
+              </form>
+          </div>
+        </dd>
+      </dl>
+      
+
+
+
+      <hr>
+      
+        <small>
+          <span>Hosted by <a href="https://readthedocs.org/">Read the Docs</a></span>
+          <span> · </span>
+          <a href="https://docs.readthedocs.io/page/privacy-policy.html">Privacy Policy</a>
+        </small>
+      
+
+      
+    </div>
+  </div>
+  
+
+</div>
+</body></html>
