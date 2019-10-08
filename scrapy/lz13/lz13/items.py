@@ -7,10 +7,9 @@
 
 import scrapy
 
-
-class DaohangItem(scrapy.Item):
+class Lz13Item(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     id = scrapy.Field()
     digest = scrapy.Field()
-    # pass
+    pass

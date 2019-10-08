@@ -2,564 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a1471e5-d69f-4d9c-a606-717e26430169" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../KingRun.rar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/animation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/animation/bg_roll.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/animation/bg_roll.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/animation/bomb_high.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/animation/bomb_high.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/animation/bomb_low.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/animation/bomb_low.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/animation/king_run.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/animation/king_run.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/scene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/scene/Game.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/scene/Game.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/scene/Over.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/scene/Over.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/script.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/script/Bomb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/script/Bomb.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/script/Game.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/script/Game.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/script/King.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/script/King.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/script/Over.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/script/Over.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/texture.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/texture/Bg_game.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/texture/Bg_game.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/texture/Bg_game2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/texture/Bg_game2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/texture/Bg_game_long.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/texture/Bg_game_long.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/texture/Bg_ground.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/texture/Bg_ground.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/texture/bomb_red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/texture/bomb_red.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/texture/king.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/texture/king.plist.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/texture/king.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/assets/texture/king.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/creator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/settings/builder.panel.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRun/settings/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/animation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/animation/bg_roll.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/animation/bg_roll.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/animation/boom_high.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/animation/boom_high.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/animation/boom_low.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/animation/boom_low.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/animation/king_run.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/animation/king_run.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/scene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/scene/game.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/scene/game.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/scene/over.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/scene/over.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/script.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/script/boom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/script/boom.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/script/game.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/script/game.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/script/king.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/script/king.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/texture.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/texture/Bg_game.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/texture/Bg_game.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/texture/Bg_game2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/texture/Bg_game2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/texture/Bg_game_long.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/texture/Bg_game_long.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/texture/Bg_ground.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/texture/Bg_ground.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/texture/bomb_red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/texture/bomb_red.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/texture/king.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/texture/king.plist.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/texture/king.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/assets/texture/king.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/creator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../KingRunTest/settings/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang.rar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Prefab/Chess.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Prefab/Chess.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Scene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Scene/Game.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Scene/Game.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Scene/Menu.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Scene/Menu.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Script.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Script/Game.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Script/Game.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Script/Menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Script/Menu.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Texture.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Texture/Bg_menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Texture/Bg_menu.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Texture/Black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Texture/Black.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Texture/ChessBoard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Texture/ChessBoard.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Texture/HelloWorld.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Texture/HelloWorld.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Texture/White.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Texture/White.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Texture/singleColor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/assets/Texture/singleColor.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/creator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/settings/builder.panel.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/settings/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/template-banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobang/template.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Prefab/Chess.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Prefab/Chess.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Scene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Scene/Game.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Scene/Game.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Scene/Menu.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Scene/Menu.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Script.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Script/Game.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Script/Game.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Script/Menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Script/Menu.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Texture.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Texture/Bg_menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Texture/Bg_menu.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Texture/Black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Texture/Black.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Texture/ChessBoard.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Texture/ChessBoard.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Texture/HelloWorld.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Texture/HelloWorld.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Texture/White.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Texture/White.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Texture/singleColor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/assets/Texture/singleColor.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/creator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../NextGobangTest/settings/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapEditor.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/assets/scene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/assets/scene/game.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/assets/scene/game.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/assets/script.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/assets/texture.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/assets/texture/barriers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/assets/texture/barriers.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/assets/texture/ground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/assets/texture/ground.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/assets/texture/player.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/assets/texture/player.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/assets/texture/star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/assets/texture/star.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/assets/texture/tiled.tmx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/assets/texture/tiled.tmx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/creator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190509/settings/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/scene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/scene/game.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/scene/game.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/script.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/script/game.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/script/game.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/script/map-test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/script/map-test.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/script/map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/script/map.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/texture.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/texture/barriers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/texture/barriers.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/texture/ground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/texture/ground.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/texture/map.tmx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/texture/map.tmx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/texture/player.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/texture/player.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/texture/star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/assets/texture/star.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/creator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190516/settings/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/scene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/scene/game.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/scene/game.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/script.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/script/map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/script/map.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/texture.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/texture/barriers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/texture/barriers.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/texture/ground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/texture/ground.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/texture/map.tmx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/texture/map.tmx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/texture/player.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/texture/player.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/texture/star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/assets/texture/star.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/creator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-20190517/settings/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/QQ20171001-213412@2x-tiledMap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/res.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/res/barriers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/res/barriers.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/res/ground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/res/ground.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/res/map.tmx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/res/map.tmx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/res/player.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/res/player.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/res/star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/res/star.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/scene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/scene/game.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/scene/game.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/script.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/script/map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/assets/script/map.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/creator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest-master/settings/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/scene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/scene/game.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/scene/game.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/script.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/script/game.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/script/game.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/texture.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/texture/barriers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/texture/barriers.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/texture/ground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/texture/ground.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/texture/player.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/texture/player.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/texture/star.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/texture/star.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/texture/tiled.tmx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/assets/texture/tiled.tmx.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/creator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TiledMapTest/settings/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/prefab/bullet.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/prefab/bullet.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/prefab/shell.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/prefab/shell.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/res.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/res/dog.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/res/dog.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/cat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/cat.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/dog.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/dog.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/house.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/house.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/house.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/house.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/house2.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/house2.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/gamebg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/gamebg.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/gamebg_big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/gamebg_big.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/grid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/grid.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/help.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/help.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/menu.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/rules.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/rules.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/setting.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/setting.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/settings.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/sound1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/sound1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/sound2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/sound2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/statics.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/images/statics.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/plane.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/plane.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/prefabs/ball.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/prefabs/ball.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/sounds.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/sounds/BgMusic9.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/sounds/BgMusic9.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/sounds/clear.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/sounds/clear.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/sounds/gameOver.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/sounds/gameOver.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/sounds/lose.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/sounds/lose.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/sounds/move.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/sounds/move.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/sounds/select.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/sounds/select.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/sounds/warn.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/sounds/warn.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/tank.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/resources/tank.jpg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/scene.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/scene/game.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/scene/game.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/scene/one.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/scene/one.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/scene/three.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/scene/three.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/scene/two.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/scene/two.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/GameControler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/GameControler.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/bullet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/bullet.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/canvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/canvas.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/cat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/cat.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/global.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/global.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/my.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/my.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/shell.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/shell.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/tank.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/tank.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/test.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/two.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/two.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/assets/script/utils.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/creator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls-20190518/settings/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/RPSPrefab.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/RPSPrefab.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/border.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/border.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/btn_login_disable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/btn_login_disable.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/btn_login_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/btn_login_hover.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/btn_login_normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/btn_login_normal.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/btn_login_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/btn_login_pressed.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/paper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/paper.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/rock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/rock.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/scissor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/resources/scissor.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/scenes/GameScene.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/scenes/GameScene.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/scripts/Constants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/scripts/Constants.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/scripts/GameController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/scripts/GameController.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/scripts/RPSPrefabController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/scripts/RPSPrefabController.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/scripts/Utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/assets/scripts/Utils.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/creator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/RockPaperScissors/settings/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/gamebg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/gamebg.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/gamebg_big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/gamebg_big.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/grid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/grid.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/help.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/help.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/menu.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/rules.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/rules.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/setting.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/setting.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/settings.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/settings.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/sound1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/sound1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/sound2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/sound2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/statics.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/images/statics.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources/Ball1.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources/Ball1.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources/Ball2.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources/Ball2.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources/Ball3.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources/Ball3.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources/Ball4.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources/Ball4.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources/Ball5.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources/Ball5.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources/Ball6.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources/Ball6.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources/Help.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources/Help.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources/Settings.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/resources/Settings.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scenes/Game.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scenes/Game.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scenes/Menu.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scenes/Menu.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scenes/Statics.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scenes/Statics.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scripts/AStar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scripts/AStar.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scripts/AudioClip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scripts/AudioClip.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scripts/Game.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scripts/Game.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scripts/Help.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scripts/Help.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scripts/Menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scripts/Menu.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scripts/Settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scripts/Settings.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scripts/Statics.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/scripts/Statics.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/sounds.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/sounds/BgMusic9.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/sounds/BgMusic9.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/sounds/clear.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/sounds/clear.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/sounds/gameOver.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/sounds/gameOver.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/sounds/lose.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/sounds/lose.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/sounds/move.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/sounds/move.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/sounds/select.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/sounds/select.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/sounds/warn.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/assets/sounds/warn.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/creator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/settings/builder.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/WisdomBalls/settings/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/石头剪刀布最终效果演示.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/石头剪刀布素材/border.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/石头剪刀布素材/btn_login_disable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/石头剪刀布素材/btn_login_hover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/石头剪刀布素材/btn_login_normal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/石头剪刀布素材/btn_login_pressed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/石头剪刀布素材/paper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/石头剪刀布素材/rock.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../WisdomBalls/石头剪刀布素材/scissor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c/201904/bin/Debug/201904.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c/201904/bin/Debug/201904.ilk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c/201904/bin/Debug/201904.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c/201904/codeblocks-17.12mingw-setup.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c/201904/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c/201904/obj/Debug/main.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../c/201904/vc100.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cocos_action/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cocos_action/assets/game.fire" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cocos_action/assets/game.fire.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cocos_action/assets/game.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cocos_action/assets/game.js.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cocos_action/creator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cocos_action/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cocos_action/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cocos_action/settings/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ITcast/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jgdq/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stockstar/stockstar/spiders/quotes_spider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../start_project.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../start_project/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../start_project/creator.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../start_project/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../start_project/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../start_project/settings/project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tiled/20190509.tmx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tiled/all.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tiled/ground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../第045课微信小游戏《黄金矿工》.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c/201904/201904.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../c/201904/201904.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../c/201904/201904.layout" beforeDir="false" afterPath="$PROJECT_DIR$/../c/201904/201904.layout" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/first/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python/first/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python/test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python/test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daohang/daohang/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/daohang/daohang/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daohang/daohang/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/daohang/daohang/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daohang/daohang/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/daohang/daohang/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daohang/daohang/spiders/d.py" beforeDir="false" afterPath="$PROJECT_DIR$/daohang/daohang/spiders/d.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daohang/富兰克林名言.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/daohang/鲁迅.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -571,34 +21,41 @@
     <session id="-185973167">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="json" value="5" />
-          <entry key="py" value="5" />
+          <entry key="cvx" value="1" />
+          <entry key="intro" value="1" />
+          <entry key="json" value="70" />
+          <entry key="py" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="5" />
-          <entry key="Python" value="5" />
+          <entry key="JSON" value="70" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="24" />
-          <entry key="py" value="865" />
+          <entry key="json" value="68" />
+          <entry key="py" value="3087" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="889" />
+          <entry key="JSON" value="68" />
+          <entry key="Python" value="3111" />
         </counts>
       </usages-collector>
     </session>
@@ -606,10 +63,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daohang/daohang/spiders/d.py">
+        <entry file="file://$PROJECT_DIR$/lz13/lz13/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="387">
+              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lz13/lz13/spiders/l.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -617,61 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daohang/daohang/items.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lz13/陶行知.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daohang/daohang/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/daohang/daohang/pipelines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-              <folding>
-                <marker date="1569634259798" expanded="true" signature="262:309" ph="..." />
-                <marker date="1569634259798" expanded="true" signature="411:420" ph="..." />
-                <marker date="1569634259798" expanded="true" signature="411:465" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daohang/daohang4.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2071">
-              <caret line="109" column="48" lean-forward="true" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daohang/daohang3.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-138">
-              <caret lean-forward="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/daohang/daohang2.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="122" column="45" lean-forward="true" selection-start-line="122" selection-start-column="45" selection-end-line="122" selection-end-column="45" />
+              <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -681,7 +97,40 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>大多数傻瓜以为他们只是无知而已</find>
+      <find>word</find>
+      <find>}</find>
+      <find>pipeli</find>
+      <find>女生不肯</find>
+      <find>pipeline</find>
+      <find>www</find>
+      <find>学而时习之</find>
+      <find>——秋谨</find>
+      <find>——托尔斯泰</find>
+      <find>就没有伟大</find>
+      <find>——马寅初</find>
+      <find>——巴甫罗夫</find>
+      <find>——纳兰性德</find>
+      <find>轻风吹到胆瓶梅，心字已成灰。</find>
+      <find>——晏殊</find>
+      <find>——元稹</find>
+      <find>——骆宾王</find>
+      <find>——陆机</find>
+      <find>》</find>
+      <find>——淮南子</find>
+      <find>——南怀瑾</find>
+      <find>——武则天</find>
+      <find>——比尔·盖茨</find>
+      <find>——陶渊明</find>
+      <find>——曹植</find>
+      <find>——宋·朱熹</find>
+      <find>——朱光潜</find>
+      <find>——陶行知</find>
+      <find>。。</find>
     </findStrings>
+    <replaceStrings>
+      <replace>digest</replace>
+      <replace>。</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -690,11 +139,48 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/daohang/daohang/settings.py" />
-        <option value="$PROJECT_DIR$/daohang/daohang/items.py" />
         <option value="$PROJECT_DIR$/daohang/daohang3.json" />
+        <option value="$PROJECT_DIR$/daohang/daohang/items.py" />
+        <option value="$PROJECT_DIR$/daohang/鲁迅.json" />
+        <option value="$PROJECT_DIR$/sohu/sohu/settings.py" />
+        <option value="$PROJECT_DIR$/sohu/sohu/items.py" />
+        <option value="$PROJECT_DIR$/sohu/sohu/钱钟书.json" />
+        <option value="$PROJECT_DIR$/sohu/sohu/spiders/s.py" />
+        <option value="$PROJECT_DIR$/sohu/sohu/屈原.json" />
+        <option value="$PROJECT_DIR$/dxsbb/dxsbb/items.py" />
+        <option value="$PROJECT_DIR$/dxsbb/dxsbb/settings.py" />
+        <option value="$PROJECT_DIR$/sohu/sohu/pipelines.py" />
+        <option value="$PROJECT_DIR$/dxsbb/dxsbb/pipelines.py" />
         <option value="$PROJECT_DIR$/daohang/daohang/spiders/d.py" />
         <option value="$PROJECT_DIR$/daohang/daohang/pipelines.py" />
+        <option value="$PROJECT_DIR$/dxsbb/dxsbb/spiders/d.py" />
+        <option value="$PROJECT_DIR$/lz13/lz13/settings.py" />
+        <option value="$PROJECT_DIR$/lz13/lz13/items.py" />
+        <option value="$PROJECT_DIR$/daohang/daohang/settings.py" />
+        <option value="$PROJECT_DIR$/lz13/叔本华.json" />
+        <option value="$PROJECT_DIR$/lz13/胡适.json" />
+        <option value="$PROJECT_DIR$/lz13/孔子的名言.json" />
+        <option value="$PROJECT_DIR$/lz13/秋谨.json" />
+        <option value="$PROJECT_DIR$/lz13/托尔斯泰.json" />
+        <option value="$PROJECT_DIR$/lz13/契诃夫.json" />
+        <option value="$PROJECT_DIR$/lz13/马寅初.json" />
+        <option value="$PROJECT_DIR$/lz13/巴甫罗夫.json" />
+        <option value="$PROJECT_DIR$/lz13/纳兰性德.json" />
+        <option value="$PROJECT_DIR$/lz13/晏殊.json" />
+        <option value="$PROJECT_DIR$/lz13/元稹.json" />
+        <option value="$PROJECT_DIR$/lz13/骆宾王.json" />
+        <option value="$PROJECT_DIR$/lz13/陆机.json" />
+        <option value="$PROJECT_DIR$/lz13/淮南子.json" />
+        <option value="$PROJECT_DIR$/lz13/南怀瑾.json" />
+        <option value="$PROJECT_DIR$/lz13/武则天名言.json" />
+        <option value="$PROJECT_DIR$/lz13/比尔·盖茨.json" />
+        <option value="$PROJECT_DIR$/lz13/陶渊明.json" />
+        <option value="$PROJECT_DIR$/lz13/曹植.json" />
+        <option value="$PROJECT_DIR$/lz13/朱熹.json" />
+        <option value="$PROJECT_DIR$/lz13/朱光潜.json" />
+        <option value="$PROJECT_DIR$/lz13/lz13/pipelines.py" />
+        <option value="$PROJECT_DIR$/lz13/lz13/spiders/l.py" />
+        <option value="$PROJECT_DIR$/lz13/陶行知.json" />
       </list>
     </option>
   </component>
@@ -710,10 +196,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="870" />
-    <option name="y" value="6" />
-    <option name="width" value="1040" />
-    <option name="height" value="785" />
+    <option name="x" value="-10" />
+    <option name="width" value="1935" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -732,20 +217,7 @@
             <path>
               <item name="scrapy" type="b2602c69:ProjectViewProjectNode" />
               <item name="scrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="daohang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="daohang" type="462c0819:PsiDirectoryNode" />
-              <item name="daohang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="scrapy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="scrapy" type="462c0819:PsiDirectoryNode" />
-              <item name="daohang" type="462c0819:PsiDirectoryNode" />
-              <item name="daohang" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+              <item name="lz13" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -785,11 +257,20 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25670242" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27345845" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -798,7 +279,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
@@ -819,81 +300,233 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app.py">
+    <entry file="file://$PROJECT_DIR$/sohu/sohu/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="202">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daohang/daohang.json">
+    <entry file="file://$PROJECT_DIR$/dxsbb/dxsbb/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1387">
-          <caret line="73" column="37" lean-forward="true" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
+        <state relative-caret-position="266">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daohang/daohang1.json">
+    <entry file="file://$PROJECT_DIR$/dxsbb/dxsbb/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daohang/daohang2.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="122" column="45" lean-forward="true" selection-start-line="122" selection-start-column="45" selection-end-line="122" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/daohang/daohang3.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret lean-forward="true" />
+        <state relative-caret-position="209">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/daohang/daohang/items.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daohang/daohang/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daohang/罗曼罗兰.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lz13/lz13/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="66" selection-start-line="66" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jgdq/jgdq/spiders/j.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lz13/1.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/lz13/items.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/daohang/daohang/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="16" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/daohang/daohang/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+        <state relative-caret-position="399">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daohang/daohang4.json">
+    <entry file="file://$PROJECT_DIR$/lz13/罗曼·罗兰.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/雷锋.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/叔本华.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/胡适.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/孔子的名言.json" />
+    <entry file="file://$PROJECT_DIR$/dxsbb/dxsbb/spiders/d.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2071">
-          <caret line="109" column="48" lean-forward="true" selection-start-line="109" selection-start-column="48" selection-end-line="109" selection-end-column="48" />
+        <state relative-caret-position="418">
+          <caret line="22" column="41" lean-forward="true" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/daohang/daohang/spiders/d.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="41" column="32" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sohu/sohu/spiders/s.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stockstar/stockstar/spiders/intro">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stockstar/stockstar/spiders/quotes_spider.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ITcast/ITcast/spiders/itcast.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lz13/杰克韦尔奇名言.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/杰克韦尔奇名言2.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/杰克韦尔奇名言3.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/杰克韦尔奇名言4.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/秋谨.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/纪伯伦.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/乔布斯.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/杰克韦尔奇名言5.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/托尔斯泰.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/契诃夫.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/马寅初.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/巴甫罗夫.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/纳兰性德.json" />
+    <entry file="file://$PROJECT_DIR$/lz13/晏殊.json">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="27" />
+          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lz13/元稹.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="57" lean-forward="true" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lz13/骆宾王.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lz13/陆机.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="36" lean-forward="true" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lz13/淮南子.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lz13/南怀瑾.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lz13/武则天名言.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lz13/比尔·盖茨.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="137" column="117" selection-start-line="137" selection-start-column="117" selection-end-line="137" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lz13/陶渊明.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lz13/曹植.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lz13/朱熹.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="52" lean-forward="true" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lz13/朱光潜.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lz13/lz13/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lz13/lz13/spiders/l.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/daohang/daohang/pipelines.py">
+    <entry file="file://$PROJECT_DIR$/lz13/陶行知.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-          <folding>
-            <marker date="1569634259798" expanded="true" signature="262:309" ph="..." />
-            <marker date="1569634259798" expanded="true" signature="411:420" ph="..." />
-            <marker date="1569634259798" expanded="true" signature="411:465" ph="..." />
-          </folding>
+        <state relative-caret-position="133">
+          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
         </state>
       </provider>
     </entry>

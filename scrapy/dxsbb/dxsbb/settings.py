@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for daohang project
+# Scrapy settings for dxsbb project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'daohang'
+BOT_NAME = 'dxsbb'
 
-SPIDER_MODULES = ['daohang.spiders']
-NEWSPIDER_MODULE = 'daohang.spiders'
+SPIDER_MODULES = ['dxsbb.spiders']
+NEWSPIDER_MODULE = 'dxsbb.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'daohang (+http://www.yourdomain.com)'
+#USER_AGENT = 'dxsbb (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'daohang.middlewares.DaohangSpiderMiddleware': 543,
+#    'dxsbb.middlewares.DxsbbSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'daohang.middlewares.DaohangDownloaderMiddleware': 543,
+#    'dxsbb.middlewares.DxsbbDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'daohang.pipelines.DaohangPipeline': 300,
+   'dxsbb.pipelines.DxsbbPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
